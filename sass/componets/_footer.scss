@@ -1,0 +1,38 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 0;
+
+  background-color: var(--secondary-bkg-color);
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.left-part {
+  margin-right: 70px;
+}
+.footer span {
+  color: var(--secondary-text-color);
+}
+
+.address {
+  margin-top: 20px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address-list .link {
+  color: rgba(255, 255, 255, 0.6);
+  width: 231px;
+  height: 21px;
+}
+.link[rel="noopener noreferrer"] {
+  color: var(--secondary-text-color);
+}

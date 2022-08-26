@@ -1,0 +1,26 @@
+.customers-list {
+  display: flex;
+  gap: 30px;
+}
+.customers-item .icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customers-item .link {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid var(--praimery-icon-color);
+
+  border-radius: 4px;
+}
+.customers-item .link:hover,
+.customers-item .link:focus {
+  border-color: var(--accent-color);
+}
+.customers-item .link:hover .icon,
+.customers-item .link:focus .icon {
+  fill: var(--accent-color);
+}
