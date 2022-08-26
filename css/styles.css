@@ -1,68 +1,4 @@
 /*Шапка*/
-.header {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  border-bottom: 1px solid #ececec;
-}
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.nav {
-  display: flex;
-  align-items: center;
-}
-
-.nav-list {
-  display: flex;
-  margin-left: 93px;
-}
-.nav-item {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-}
-.nav-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-list .link {
-  display: block;
-  margin-top: 32px;
-  margin-bottom: 32px;
-
-  letter-spacing: 0.02em;
-  color: var(--titel-text-color);
-}
-.emphasis::after {
-  position: absolute;
-  bottom: -1px;
-
-  content: "";
-  width: 48px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
-}
-.header-list {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-.header-list .link {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.02em;
-}
-.header-list .icon {
-  fill: currentColor;
-}
 
 /*Герой*/
 
@@ -76,37 +12,12 @@
 
 /*Футер*/
 
-.social-networks > .title-third {
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: var(--secondary-text-color);
-}
-
-.social-networks {
-  margin-top: 12px;
-}
-.social-networks .link {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.social-networks .icon {
-  fill: var(--secondary-icon-color);
-}
-
 /* Різне*/
 
 /*Сторінка Портфоліо*/
 
 /* Шапка*/
-.emphasis-portfolio::after {
-  position: absolute;
-  bottom: -1px;
 
-  content: "";
-  width: 78px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
-}
 /*Проєкти*/
 
 /*Модальне вікно*/

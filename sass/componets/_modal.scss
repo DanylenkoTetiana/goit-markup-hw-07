@@ -25,10 +25,11 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  .backdrop.is-hidden & {
+    opacity: 0;
+  }
 }
-.backdrop.is-hidden .modal {
-  opacity: 0;
-}
+
 .close-button {
   position: absolute;
   top: 8px;
@@ -88,6 +89,9 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117);
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .form-icons {
@@ -97,6 +101,9 @@
   top: 50%;
   bottom: 50%;
   transform: translateY(-50%);
+  .input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 .fild-coment {
   margin-bottom: 20px;
@@ -112,10 +119,11 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117);
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
-.coment-box::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
+
 .fild-agreement {
   position: relative;
   margin-bottom: 30px;
@@ -133,40 +141,35 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-.agreement-label span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  margin-right: 8px;
-  width: 16px;
-  height: 15px;
-  border-radius: 3px;
-  border: 2px solid #303030;
-  color: transparent;
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    border-radius: 3px;
+    border: 2px solid #303030;
+    color: transparent;
+    .input-agreement:checked + & {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+  }
+  .link {
+    margin-left: 4px;
+    text-decoration: underline;
+    color: var(--accent-color);
+  }
 }
+
 .icon-check {
   fill: var(--secondary-icon-color);
-}
-.agreement-label .link {
-  margin-left: 4px;
-  text-decoration: underline;
-  color: var(--accent-color);
-}
-.input-agreement:checked + .agreement-label span {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
 }
 
 .form-button {
   padding: 10px 52px;
   margin-left: auto;
   margin-right: auto;
-}
-.input:focus {
-  border-color: var(--accent-color);
-}
-.input:focus + .form-icons {
-  fill: var(--accent-color);
 }

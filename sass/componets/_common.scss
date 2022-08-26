@@ -14,19 +14,31 @@ img {
 
   text-decoration: none;
   color: var(--praimery-text-color);
+  .icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    fill: var(--praimery-icon-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &.highlighted {
+    color: var(--accent-color);
+  }
+}
+
+button {
+  cursor: pointer;
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.link .icon {
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  fill: var(--praimery-icon-color);
-}
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -43,9 +55,4 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
-.link:hover,
-.link:focus,
-.link.highlighted {
-  color: var(--accent-color);
 }

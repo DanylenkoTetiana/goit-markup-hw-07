@@ -18,6 +18,12 @@
   position: relative;
   display: flex;
   align-items: center;
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 28px;
+  }
 }
 .subscription-input {
   margin-right: 12px;
@@ -48,16 +54,10 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-.subscription .button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 28px;
+  .subscription-input:focus + & {
+    color: transparent;
+  }
 }
 .subscription-icon {
   fill: var(--secondary-icon-color);
-}
-.subscription-input:focus + .subscription-label {
-  color: transparent;
 }

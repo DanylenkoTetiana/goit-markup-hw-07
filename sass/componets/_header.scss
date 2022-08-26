@@ -1,0 +1,33 @@
+.header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  border-bottom: 1px solid #ececec;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.emphasis::after {
+  position: absolute;
+  bottom: -1px;
+
+  content: "";
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+.emphasis-portfolio::after {
+  position: absolute;
+  bottom: -1px;
+
+  content: "";
+  width: 78px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}

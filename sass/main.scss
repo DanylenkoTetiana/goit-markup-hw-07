@@ -9,6 +9,9 @@
 @import "./componets/pretitle";
 @import "./componets/networks";
 
+@import "./componets/header";
+@import "./componets/navigation";
+@import "./componets/contacts";
 @import "./componets/hero";
 @import "./componets/modal";
 
@@ -20,7 +23,3 @@
 @import "./componets/subscription";
 
 @import "./componets/projects\ ";
-
-body {
-  background-color: aqua;
-}

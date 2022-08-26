@@ -4,16 +4,17 @@
   padding-left: 0;
 
   background-color: var(--secondary-bkg-color);
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  span {
+    color: var(--secondary-text-color);
+  }
 }
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-}
+
 .left-part {
   margin-right: 70px;
-}
-.footer span {
-  color: var(--secondary-text-color);
 }
 
 .address {
@@ -35,4 +36,19 @@
 }
 .link[rel="noopener noreferrer"] {
   color: var(--secondary-text-color);
+}
+
+.social-networks {
+  margin-top: 12px;
+  > .title-third {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--secondary-text-color);
+  }
+  .link {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .icon {
+    fill: var(--secondary-icon-color);
+  }
 }
