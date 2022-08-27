@@ -9,7 +9,10 @@
   color: var(--accent-color);
   text-decoration: none;
   letter-spacing: 0.03em;
-  span {
-    color: #000000;
-  }
+}
+.logo__part {
+  color: #000000;
+}
+.logo__part--white {
+  color: var(--secondary-text-color);
 }

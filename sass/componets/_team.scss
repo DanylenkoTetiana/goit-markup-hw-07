@@ -1,11 +1,10 @@
 .team {
   background-color: #f5f4fa;
 }
-.team-list {
-  display: flex;
+.team__list {
   gap: 30px;
 }
-.team-item {
+.team__item {
   max-width: 270px;
 
   background-color: #ffffff;
@@ -14,7 +13,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-employee {
+.team__employee {
   margin-top: 30px;
   margin-bottom: 10px;
 
@@ -25,7 +24,7 @@
   letter-spacing: 0.03em;
   color: var(--titel-text-color);
 }
-.position {
+.team__position {
   margin-top: 0;
   margin-bottom: 16px;
 
