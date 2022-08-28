@@ -24,22 +24,30 @@ ul {
   &:focus {
     color: var(--accent-color);
   }
-  .icon {
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
 }
+
 .icon {
   fill: var(--praimery-icon-color);
+}
+.icon--moving {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .link:hover &,
+  .link:focus & {
+    fill: var(--accent-color);
+  }
 }
 .icon--white {
   fill: var(--secondary-icon-color);
 }
+.icon--grey {
+  fill: var(--praimery-text-color);
+}
+
 button {
   cursor: pointer;
 }
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;

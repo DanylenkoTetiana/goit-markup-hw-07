@@ -78,7 +78,7 @@
   letter-spacing: 0.03em;
 }
 
-.order-form__icon-check {
+.order-form__quadrate {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,11 +89,12 @@
   border-radius: 3px;
   border: 2px solid #303030;
   color: transparent;
-  .order-form__input-agreement:checked + & {
+  .order-form__input-agreement:checked + .order-form__agreement-label & {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
   }
 }
+
 .order-form__link {
   margin-left: 4px;
   text-decoration: underline;
