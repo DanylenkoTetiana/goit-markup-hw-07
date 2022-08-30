@@ -26,17 +26,20 @@
     color: var(--accent-color);
   }
 }
-
-.navigation__emphasis::after {
+%navigation__emphasis {
   position: absolute;
   bottom: -1px;
 
   content: "";
-  width: 48px;
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
 }
+.navigation__emphasis::after {
+  @extend %navigation__emphasis;
+  width: 48px;
+}
 .navigation__emphasis--bigger::after {
+  @extend %navigation__emphasis;
   width: 78px;
 }

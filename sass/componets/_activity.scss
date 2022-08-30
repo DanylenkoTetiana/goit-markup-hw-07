@@ -10,7 +10,7 @@
   }
 }
 
-.activity__label {
+.activity__inner {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -19,7 +19,7 @@
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
 }
-.activity__title-third {
+.activity__pretitle {
   position: absolute;
   left: 50%;
   top: 50%;
